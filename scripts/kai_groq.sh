@@ -1,6 +1,6 @@
 #!/bin/bash
 GROQ_API_KEY="${GROQ_API_KEY:-}"
-MODEL="llama-3.1-70b-versatile"
+MODEL="llama-3.3-70b-versatile"
 MAX_TOKENS=2048
 check_key() {
     if [ -z "$GROQ_API_KEY" ]; then
