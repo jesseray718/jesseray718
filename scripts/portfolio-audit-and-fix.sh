@@ -125,7 +125,7 @@ for repo in "${!TOPICS_MAP[@]}"; do
   echo "     Topics: $topics"
   # Convert space-separated topics into JSON array for gh cli
   topic_array=$(echo "$topics" | tr ' ' '\n' | jq -R . | jq -s .)
-  gh repo edit "$U/$repo" --topics "$topic_array" || echo "     (topics update may require auth scope)"
+  gh repo edit "$U/$repo" --topics "$topic_array" 2>/dev/null || echo "     (topics update may require auth scope)"
 done
 
 echo ""
