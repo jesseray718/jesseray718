@@ -2,10 +2,11 @@
 set -euo pipefail
 
 # === OPENROOT PORTFOLIO AUDIT & RESTRUCTURE ===
-# Run: bash scripts/portfolio-audit-and-fix.sh
+# Run: bash portfolio-audit-and-fix.sh
 # Prerequisites: 
 #   - gh auth login (with repo admin scope)
 #   - git config user.name / user.email
+#   - jq installed
 
 U="jesseray718"
 WORK="$HOME/openroot_work"
@@ -22,19 +23,10 @@ echo ""
 echo "STEP 1: SELF-AUDIT — Fetch all repos with metadata"
 echo ""
 
-gh repo list $U --limit 100 --json name,description,diskUsage,licenseInfo,repositoryTopics,isArchived,isFork,primaryLanguage \
-  --jq '.[] | select(.isFork == false) | {
-    name, 
-    archived: .isArchived,
-    size_kb: .diskUsage,
-    license: (.licenseInfo.key // "NONE"),
-    topics: (.repositoryTopics | length),
-    primary_lang: (.primaryLanguage.name // "NONE"),
-    description: (.description // "(no description)")
-  }' > repos.json
+gh repo list $U --limit 100 --json name,description,diskUsage,licenseInfo,repositoryTopics,isArchived,isFork,primaryLanguage > repos.json
 
 echo "Found repos:"
-jq -r '.[] | "\(.name) | size:\(.size_kb)KB | license:\(.license) | lang:\(.primary_lang) | topics:\(.topics) | archived:\(.archived)"' repos.json
+jq -r '.[] | select(.isFork == false) | "\(.name) | size:\(.diskUsage)KB | license:\(.licenseInfo.key // "NONE") | lang:\(.primaryLanguage.name // "NONE") | topics:\(.repositoryTopics | length) | archived:\(.isArchived)"' repos.json
 
 echo ""
 echo "Saved to: repos.json"
@@ -97,7 +89,7 @@ done
 
 echo ""
 echo "License note: GitHub CLI doesn't expose license changes directly."
-echo "For the licenses above, log in to the web UI or use GraphQL API."
+echo "For the licenses above, visit: https://github.com/jesseray718/{repo}/settings/license"
 echo ""
 sleep 2
 
@@ -198,5 +190,8 @@ echo "=================================================="
 echo "RESTRUCTURE COMPLETE"
 echo "=================================================="
 echo ""
-echo "Next: Push these changes to your profile README"
-echo "Run: cd ~/openroot && git push origin main"
+echo "Audit report: $WORK/repos.json"
+echo ""
+echo "Next steps:"
+echo "  1. Review licensing manually at GitHub web UI"
+echo "  2. Push changes to openroot: cd ~/openroot && git push"
