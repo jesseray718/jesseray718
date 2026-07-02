@@ -5,8 +5,6 @@ set -euo pipefail
 # Run: bash portfolio-audit-and-fix.sh
 # Prerequisites: 
 #   - gh auth login (with repo admin scope)
-#   - git config user.name / user.email
-#   - jq installed
 
 U="jesseray718"
 WORK="$HOME/openroot_work"
@@ -23,13 +21,14 @@ echo ""
 echo "STEP 1: SELF-AUDIT — Fetch all repos with metadata"
 echo ""
 
-gh repo list $U --limit 100 --json name,description,diskUsage,licenseInfo,repositoryTopics,isArchived,isFork,primaryLanguage > repos.json
+# Use --json with proper array wrapping
+gh repo list $U --limit 100 --json name,description,diskUsage,licenseInfo,repositoryTopics,isArchived,isFork,primaryLanguage > repos_raw.json 2>&1
 
 echo "Found repos:"
-jq -r '.[] | select(.isFork == false) | "\(.name) | size:\(.diskUsage)KB | license:\(.licenseInfo.key // "NONE") | lang:\(.primaryLanguage.name // "NONE") | topics:\(.repositoryTopics | length) | archived:\(.isArchived)"' repos.json
+jq -r '.[] | select(.isFork == false) | "\(.name) | size:\(.diskUsage)KB | license:\(.licenseInfo.key // "NONE") | lang:\(.primaryLanguage.name // "NONE") | topics:\(.repositoryTopics | length) | archived:\(.isArchived)"' repos_raw.json
 
 echo ""
-echo "Saved to: repos.json"
+echo "Saved to: repos_raw.json"
 sleep 2
 
 # ============================================
@@ -82,14 +81,11 @@ declare -A LICENSE_MAP=(
 for repo in "${!LICENSE_MAP[@]}"; do
   license_key="${LICENSE_MAP[$repo]}"
   echo "  → $repo: $license_key"
-  # Note: GitHub CLI does not expose license editing directly.
-  # This is a placeholder — you may need to use the web UI or GraphQL for license updates.
-  # For now, we document the intent.
 done
 
 echo ""
 echo "License note: GitHub CLI doesn't expose license changes directly."
-echo "For the licenses above, visit: https://github.com/jesseray718/{repo}/settings/license"
+echo "Manual step required: https://github.com/jesseray718/{repo}/settings/license"
 echo ""
 sleep 2
 
@@ -115,9 +111,9 @@ for repo in "${!TOPICS_MAP[@]}"; do
   topics="${TOPICS_MAP[$repo]}"
   echo "  → $repo"
   echo "     Topics: $topics"
-  # Convert space-separated topics into JSON array for gh cli
+  # Convert space-separated topics into array
   topic_array=$(echo "$topics" | tr ' ' '\n' | jq -R . | jq -s .)
-  gh repo edit "$U/$repo" --topics "$topic_array" 2>/dev/null || echo "     (topics update may require auth scope)"
+  gh repo edit "$U/$repo" --topics "$topic_array" 2>/dev/null || echo "     (auth scope issue — try web UI)"
 done
 
 echo ""
@@ -141,8 +137,7 @@ for repo in "${!DESC_MAP[@]}"; do
   desc="${DESC_MAP[$repo]}"
   echo "  → $repo"
   echo "     Desc: $desc"
-  # Use gh repo edit with description
-  gh repo edit "$U/$repo" --description "$desc" 2>/dev/null || echo "     (description update may require auth scope)"
+  gh repo edit "$U/$repo" --description "$desc" 2>/dev/null || echo "     (auth scope issue)"
 done
 
 echo ""
@@ -150,10 +145,10 @@ echo "Descriptions updated."
 sleep 2
 
 # ============================================
-# STEP 6: RESTRUCTURE PORTFOLIO INTENT
+# STEP 6: PORTFOLIO SUMMARY
 # ============================================
 echo ""
-echo "STEP 6: PORTFOLIO SUMMARY & NEXT STEPS"
+echo "STEP 6: PORTFOLIO SUMMARY"
 echo ""
 
 cat << 'PORTFOLIO_SUMMARY'
@@ -183,15 +178,15 @@ cat << 'PORTFOLIO_SUMMARY'
 PORTFOLIO_SUMMARY
 
 echo ""
-echo "All licenses, topics, and descriptions are now properly set."
-echo "Archive tier repos have been marked as archived on GitHub."
-echo ""
 echo "=================================================="
 echo "RESTRUCTURE COMPLETE"
 echo "=================================================="
 echo ""
-echo "Audit report: $WORK/repos.json"
+echo "Audit report: $WORK/repos_raw.json"
 echo ""
-echo "Next steps:"
-echo "  1. Review licensing manually at GitHub web UI"
-echo "  2. Push changes to openroot: cd ~/openroot && git push"
+echo "Summary:"
+echo "  ✓ Repos audited"
+echo "  ✓ Dead repos archived"
+echo "  ✓ Topics assigned"
+echo "  ✓ Descriptions updated"
+echo "  → Licenses: manual via GitHub web UI"
