@@ -2,10 +2,9 @@
 
 Building **[OpenRoot](https://github.com/jesseray718/openroot)** — an open-source ecosystem of
 low-cost, locally-buildable technologies for shelter, water, food, cooling and power.
-
 Maximum good for maximum people with minimum effort.
 
-- 🏗 **OpenRoot hub** → integrated system design
+- 🏗 **[OpenRoot hub](https://github.com/jesseray718/openroot)** → integrated system design
 - 🧱 Ferrocement geodesic & catenary domes · volumetric solar-thermal · cooling labyrinth
 - 📄 Docs CC-BY-SA-4.0 · code GPL-3.0 · archived on Zenodo (DOI)
 - 🤝 Contributions, forks and field-builders welcome — open an issue or a Discussion
