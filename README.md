@@ -49,8 +49,8 @@ Physical output. Modular, appropriate technology.
 | **AE-GFRC-01** | [thermal-systems/AE-GFRC-01.md](https://github.com/jesseray718/openroot/tree/main/research/thermal-systems/AE-GFRC-01.md) | Aerated Glass-Fiber Reinforced Concrete — open-cell volumetric, zirconium substitution |
 
 ### Published Artifacts
-- Zenodo DOI: [10.5281/zenodo.21210931](https://doi.org/10.5281/zenodo.21210931) — Thermal cascade dataset
-- IPFS CID: QmcMjnAVN9FbQ77VwMPMCteb93U7W4REdZmZbPqoMBE4F
+- Zenodo DOI: [10.5281/zenodo.21225683](https://doi.org/10.5281/zenodo.21225683)(https://doi.org/10.5281/zenodo.21210931) — Thermal cascade dataset
+- IPFS CID: QmVJxfQmFoTVDp1GRui8bEKJ7x7J154h8RX3EmxQBcCrBt
 
 ---
 
