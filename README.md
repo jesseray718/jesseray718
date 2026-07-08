@@ -47,7 +47,7 @@ The core insight: **the same structural architecture governs all generative syst
 | [agape-une](https://github.com/jesseray718/agape-une) | Universal Nomenclature Engine + Agape engineering principle |
 | [aerocement](https://github.com/jesseray718/aerocement) | Triple-utility passive solar-thermal concrete system |
 | [OpenCell-Thermal-System](https://github.com/jesseray718/OpenCell-Thermal-System) | Thermal cascade simulation code (H-003 validated) |
-| [civilization2.0](https://github.com/jesseray718/civilization2.0) | Civilizational mapping of generative architecture |
+| [civilization2.0](https://github.com/jesseray718/civilization2.0) | Civilizational mapping of generative architecture (archived) |
 | [openroot-spoke-template](https://github.com/jesseray718/openroot-spoke-template) | Template for deploying local OpenRoot spoke nodes |
 
 ---
