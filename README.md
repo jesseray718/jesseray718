@@ -64,13 +64,13 @@ The core insight: **the same structural architecture governs all generative syst
 
 ## v1.0 Milestone Targets (Production Release)
 
-| Target | Current | Required | Owner | Deadline |
-|--------|---------|----------|-------|----------|
-| Physical Prototype Data | Simulations only | 30-day JSONL logs | Jesse + collaborators | Week 8 |
-| ACRE Validator Code | Spec only | Two-approval Solana smart contract | Smart Contract Dev | Week 10 |
-| Validated Spoke Node | Template only | Running offline LLM + IPFS mesh | Mesh Engineer | Week 10 |
-| Credit Case Study | Checklist only | First user reaches 700+ score | Early Adopter | Week 12 |
-| Unified Handbook | Fragmented docs | Single searchable PDF/book | Editor | Week 12 |
+| Target | Current | Required | Deadline |
+|--------|---------|----------|----------|
+| Physical Prototype Data | Simulations only | 30-day JSONL logs | Week 8 |
+| ACRE Validator Code | Spec only | Two-approval Solana contract | Week 10 |
+| Validated Spoke Node | Template only | Running offline LLM + IPFS mesh | Week 10 |
+| Credit Case Study | Checklist only | First user reaches 700+ score | Week 12 |
+| Unified Handbook | Fragmented docs | Single searchable PDF/book | Week 12 |
 
 ---
 
