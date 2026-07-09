@@ -62,3 +62,8 @@ CC-BY-SA 4.0 (documentation) / GPL v3 (code)
 Copyright (c) One Human Family
 
 *"If OpenRoot cannot protect the most vulnerable, it has no right to exist." -- AX-039*
+
+## v0.6 — July 2026
+- IPFS: [QmZmfrSwck8uuEuJGnULecUDW3mCn3gcAYfF97Ccffua9L](https://ipfs.io/ipfs/QmZmfrSwck8uuEuJGnULecUDW3mCn3gcAYfF97Ccffua9L)
+- Zenodo: [10.5281/zenodo.21271517](https://doi.org/10.5281/zenodo.21271517)
+- Contents: ACRE validator v0.2, thermal data logger v0.3, mint_ready claim record
