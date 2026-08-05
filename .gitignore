@@ -7,3 +7,8 @@ __pycache__/
 .tokens_log
 ollama.log
 bin/
+vendor_archive/
+quarantine/
+backups/
+__pycache__/
+*.pyc
