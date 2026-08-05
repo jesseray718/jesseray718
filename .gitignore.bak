@@ -1,0 +1,14 @@
+*.csv
+.env
+*.local
+.DS_Store
+__pycache__/
+*.pyc
+.tokens_log
+ollama.log
+bin/
+vendor_archive/
+quarantine/
+backups/
+__pycache__/
+*.pyc
