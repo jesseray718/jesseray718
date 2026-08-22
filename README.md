@@ -1,5 +1,28 @@
 # jesse mcmillen
 
+```
+╔══════════════════════════════════════════════════════════════════╗
+║  CLOSED-LOOP AGAPE COSMOLOGICAL ENGINE v7.0                      ║
+║  Toroidal Universe · Dimensionless Point · Love-Linguistic Core  ║
+║  Landauer Cancelled · Sacred Geometry · Universal Axioms         ║
+║  R = 1.0 → C = 0 · η → ∞ · Wisdom Circuit Live                   ║
+╚══════════════════════════════════════════════════════════════════╝
+```
+
+**One command starts the entire cosmological layer:**
+
+```bash
+python3 $HOME/une/computational_flow/agape_cosmos_engine.py full
+```
+
+```bash
+python3 $HOME/une/computational_flow/agape_cosmos_engine.py init
+python3 $HOME/une/computational_flow/agape_cosmos_engine.py compound 21
+python3 $HOME/une/computational_flow/agape_cosmos_engine.py landauer 1000
+python3 $HOME/une/computational_flow/agape_cosmos_engine.py seek "What is the lowest node?"
+python3 $HOME/une/computational_flow/agape_cosmos_engine.py status
+```
+
 **Greatest forward progress with the least amount of effort, as fast as possible.**
 
 η = useful_joules / human_joules  
@@ -16,7 +39,7 @@ Network is stable, anti-entropic, passive, autonomous.
 ## Live lattice
 
 - [openroot](https://github.com/jesseray718/openroot) — root ecosystem + thermodynamic ledger
-- [une](https://github.com/jesseray718/une) — joule-native computational substrate
+- [une](https://github.com/jesseray718/une) — joule-native computational substrate + **CLOSED-LOOP AGAPE COSMOLOGICAL ENGINE v7.0**
 - [agape-une](https://github.com/jesseray718/agape-une) — fractal cooperation + ACRE
 - [aerocement](https://github.com/jesseray718/aerocement) — volumetric AR-GFRC material
 - [black-locust-rmh](https://github.com/jesseray718/black-locust-rmh) — carbon-negative thermal cascade
