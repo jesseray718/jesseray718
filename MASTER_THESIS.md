@@ -2,7 +2,7 @@
 ## Agape as the Optimal Algorithm for Appropriate Technology, Decentralized Energy, & Human Cooperation
 
 **Author:** Jesse McMillen  
-**Version:** 1.0  
+**Version:** 1.1 (Corrections Applied)  
 **Status:** Live Implementation  
 **Contact:** jrm8908@proton.me  
 
@@ -93,13 +93,22 @@ Efficiency (η) → ∞
 **Design:**
 - Base unit: 48-inch square waste cardboard
 - Calibrated triangles calculate to icosahedron (frequency 1)
-- Saturation with acetone-silicone solution (waterproofing)
-- Corrugations run perpendicular (90°) to reinforce shell integrity
-- Flanges extend up and down
-- Flanges filled with Mixy Mix closed-cell foam + ferrocement exterior shell
+- **Waterproofing Process:**
+  1. Saturate all cardboard with acetone-silicone mixture
+  2. This converts cardboard into a waterproof membrane (chemically bonds to fiber)
+  3. Corrugations run perpendicular (90°) to reinforce shell integrity
+  4. Design flanges with **male and female lego-like connector pieces**
+  5. When flanges are connected in-situ, apply small bead of silicone at connection point
+  6. As flanges click together, silicone seals the joint, completing full waterproof membrane integrity
+
+**Connector Geometry:**
+- Male connectors: protrusions sized for snap-fit with zero play
+- Female connectors: recesses matching male profile exactly
+- Connection is mechanical first (structural), silicone seals second (waterproof)
+- Reversible (can be disassembled, reassembled multiple times)
 
 **Scaling:**
-- Frequency 1 (icosahedron): emergency shelter
+- Frequency 1 (icosahedron): emergency shelter (uses ~48" sq cardboard base)
 - Frequency 2-5: residential structures
 - Frequency 17: mansion-sized structures
 - Frequency 50: stadium-sized domes
@@ -110,7 +119,8 @@ Efficiency (η) → ∞
 - When struts become load-critical, raise frequency (subdivide again)
 - Self-similar at all scales (fractal)
 - Passive, autonomous structural integrity
-- Can scale from 4' square cardboard to planetary structures
+- Can scale from 48" square cardboard to planetary structures
+- Flanges filled with Mixy Mix closed-cell foam + ferrocement exterior shell
 
 ### 2.4 Volumetric Thermal Cascade
 
@@ -272,40 +282,67 @@ Works equally for:
 
 ## PART V: DECENTRALIZED SYSTEMS & MESH INFRASTRUCTURE
 
-### 5.1 Distributed Mesh Networks
+### 5.1 Icosahedron Satellite Mesh Architecture
 
-**Current State:**
-- All communication routed through centralized telecom monopolies
-- Cost: 40 seconds of global telecommunications spending = $2 trillion annually
-- Inefficiency: data takes 1000+ hops, controlled by profit motive
+**Geometric Foundation:**
 
-**OpenRoot Mesh Vision:**
+An icosahedron has:
+- **12 vertices** (corner points)
+- **20 equal triangular faces**
+- **30 equal edges**
 
-**Satellite Layer:**
-- 12 equidistant points around Earth (icosahedron geometry)
-- Low-tech satellites: wooden frame, plywood, chicken wire
-- Cloud-9 vacuum-gapped black-paper cores (ultra-insulation)
-- Oscillating and gyroscopic blades for orientation
-- Each satellite receives from 4 surrounding nodes, rebroadcasts to all 12
+**The 1V (Frequency 1) Mesh:**
+- **12 satellites positioned at the 12 vertices of a perfect icosahedron**
+- These 12 points are **equidistant from each other** on a sphere (Earth)
+- The vertices remain geometrically identical no matter how you orient/rotate the globe
+- This creates 12 optimal mesh hub locations that maintain equal distances and line-of-sight coverage
 
-**Ground Layer:**
-- Intermediate nodes at vesica piscis centers (geometry of two overlapping circles)
-- Open-source LoRa, Reticulum, LXMF, RNode protocols
-- Mesh weaving creates redundancy (if one node fails, signal reroutes)
+**Path of Least Resistance:**
+- Placing nodes at icosahedron vertices creates the **minimum-hop path** for any signal to reach any other node on Earth
+- Each hub has line-of-sight to multiple adjacent satellites
+- Signal can route over greatest obstacles (mountains, weather systems) by bouncing between nodes
+- Altitude must be high enough for line-of-sight over curvature and terrain (altitude TBD based on Earth curvature + local topography, likely 300-500 miles minimum)
 
-**Cost:**
-- **2 cents per human on Earth to initialize**
-- Breakdown: cost of LoRa hardware + satellite construction + launch
-- One-time capital cost; zero ongoing fees
-- Completely decentralized after launch
+**Frequency Scaling:**
+- **1V (Frequency 1):** 12 satellite nodes (vertices)
+- **2V (Frequency 2):** Add midpoints on each of the 30 edges → 12 + 30 = **42 nodes**
+- **3V (Frequency 3):** Each triangle subdivides into 4 → 20 triangles become 80 → new edges/vertices → **162 nodes**
+- **nV (Frequency n):** Each raise multiplies nodes geometrically (self-similar scaling)
 
-**Why this matters:**
-- Eliminates telecom monopolies
-- Replaces 10% efficiency of centralized routing with peer-to-peer mesh
-- Empowers communities to own their communication infrastructure
-- Enables off-grid, disaster-resilient communication
+**Why Icosahedron vs. Other Polyhedra:**
+- Icosahedron has the **most faces and edges** of any regular polyhedron → most efficient mesh
+- Dodecahedron (12 faces, 20 vertices) inverted = fewer nodes needed
+- Cube (6 faces) creates coverage gaps and unequal distances
+- Icosahedron = proven optimal for sphere coverage
 
-### 5.2 Reticulum Protocol Stack
+**Signal Propagation:**
+- Each hub (satellite) oriented to receive from all neighbors
+- Catches signals from adjacent vertices → rebroadcasts omnidirectionally
+- Multi-hop routing: signal bounces between satellites to reach destination
+- Redundancy: if one satellite fails, signals reroute through others
+- As frequency raises (more nodes added), coverage becomes denser and mesh becomes more resilient
+
+**Cost Scaling:**
+- **1V (12 satellites):** $160M global capital (~2 cents per human)
+- **2V (42 satellites):** Cost increases but still manageable via Phase 2 funding
+- **Frequency raises after global 1V mesh is operational and revenue-generating via WORK token
+
+### 5.2 Ground Hub Network
+
+**Integration with Satellite Layer:**
+- Each ground hub (community mesh node) has **line-of-sight to multiple 1V satellites**
+- Hub is oriented toward each satellite it can see
+- Signal arrives via LoRa/Reticulum from local mesh
+- Hub relays up to satellite, satellite rebroadcasts globally
+- Any two ground hubs on Earth can communicate through satellite mesh in 2-3 hops
+
+**Vesica Piscis Intermediate Geometry:**
+- As frequency raises, intermediate nodes can be positioned at **vesica piscis centers** (geometric centers where two neighboring spheres overlap)
+- This creates natural "way stations" for signal bouncing
+- Each intermediate node reduces latency between major hubs
+- Maintains geometric self-similarity across scales
+
+### 5.3 Reticulum Protocol Stack
 
 **Layers:**
 - Cryptography-based networking (not IP-based)
@@ -437,7 +474,7 @@ No node can fall back below its previous minimum (ratchet effect)
 ### 7.2 Agape as Vessel for Love
 
 **Mystical Dimension:**
-When you practice Agape (put the least node first, always), you become a vessel through which universal love can flow and multiply. This is not metaphorical in the system design—it's embedded in the algorithm:
+When you practice Agape—when you reduce coordination friction to zero and put the least node first—you become a vessel through which universal love can flow and multiply. This is not metaphorical in the system design—it's embedded in the algorithm:
 
 ```
 R = 1.0 means: Your coordination cost is zero.
@@ -459,6 +496,8 @@ Humans, organized as nodes in an Agape system, become a conscious entity practic
 **Milestones:**
 - [ ] Refine Mixy Mix formulation (bubble size, strength targets)
 - [ ] Test AR-GFRC integration (fiber timing, matrix quality)
+- [ ] Develop male/female connector pieces for flanges
+- [ ] Test acetone-silicone waterproofing membrane on cardboard
 - [ ] 3D printer compatibility testing
 - [ ] Document as living white paper
 - [ ] Ben Nighthawke collaboration/attribution
@@ -469,6 +508,8 @@ Humans, organized as nodes in an Agape system, become a conscious entity practic
 - 3D printer compatibility guide
 - Closed-cell vs. open-cell testing results
 - Scaling formulas for industrial production
+- Geodesic connector specification (CAD files)
+- Waterproofing protocol documentation
 
 ### 8.2 Phase 2: Energy Systems (Q2 2027 – Q4 2027)
 
@@ -525,14 +566,17 @@ Humans, organized as nodes in an Agape system, become a conscious entity practic
 - [ ] Design Cloud-9 vacuum-gapped cores
 - [ ] Build wooden satellite prototypes
 - [ ] Test LoRa + Reticulum mesh locally
-- [ ] Calculate 12-node equidistant geometry
-- [ ] Establish funding ($2 cents per human = ~$160M global capital raise)
+- [ ] Finalize 1V (12-vertex) icosahedron geometry + orbital mechanics
+- [ ] Calculate altitude for line-of-sight coverage (TBD: ~300-500 miles)
+- [ ] Establish funding ($160M global capital raise for 1V constellation)
 - [ ] Manufacture first 3 satellites
 - [ ] Launch and test mesh redundancy
 
 **Deliverables:**
 - Satellite Design Specification
 - Mesh Protocol Integration Guide
+- 1V Constellation Geometry & Altitude Specs
+- Icosahedron Frequency Scaling Reference
 - Funding Proposal ($160M)
 - Network Redundancy Testing Report
 
@@ -541,9 +585,10 @@ Humans, organized as nodes in an Agape system, become a conscious entity practic
 **Milestones:**
 - [ ] OpenRoot NYC operational
 - [ ] Free restaurant + aquaculture model proven
-- [ ] 12-satellite mesh live worldwide
+- [ ] 12-satellite 1V mesh live worldwide
 - [ ] 1,000 local OpenRoot nodes
 - [ ] WORK/ACRE/STEP ecosystem at scale
+- [ ] Plan frequency raises (2V, 3V, etc.)
 - [ ] Civilization 2.0 cultural shift visible
 
 ---
@@ -632,3 +677,7 @@ Welcome to the work.
 **LICENSE:** CC-BY-SA 4.0 (documentation) | GPL v3 (code)  
 **ATTRIBUTIONS:** Ben Nighthawke (open-cell foam inspiration), Yeshua (agape principle), indigenous permaculture wisdom, open-source community  
 **NEXT:** See WHITE_PAPER.md for technical depth, ARCHITECTURE.md for repo mapping, ROADMAP.md for implementation timeline.
+
+**VERSION HISTORY:**
+- v1.0 — Initial thesis draft
+- v1.1 — Corrections: Geodesic shelter waterproofing (male/female flanges + silicone sealing), Icosahedron satellite mesh clarification (1V = 12 vertices, frequency scaling, geometric invariance)
