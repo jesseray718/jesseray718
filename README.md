@@ -25,3 +25,6 @@ in the open-source community where I can:
 **Contact:** jesseray718@gmail.com | [GitHub](https://github.com/jesseray718)
 
 Open to remote, equity, or contract arrangements where contribution exceeds hourly constraints.
+
+## Knowledge Integration
+See `docs/knowledge/`.
