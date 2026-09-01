@@ -12,7 +12,7 @@ Building maximally efficient computation through permaculture principles and Aga
 
 ## Employment Context
 
-Currently employed in a role I am severely overqualified for. Seeking opportunities
+Seeking opportunities
 in the open-source community where I can:
 
 - Contribute at full capability to mission-critical systems
