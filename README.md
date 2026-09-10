@@ -1,3 +1,5 @@
+![Profile Views](https://komarev.com/ghpvc/?username=jesseray718&label=Profile%20Views&color=0e75b6&style=flat)
+[![Sponsor](https://img.shields.io/badge/Sponsor-ff69b4?logo=github&style=flat)](https://github.com/sponsors/jesseray718)
 # Jesse McMillen — OpenRoot
 
 Sikeston, Missouri. Building an offline-first mesh of appropriate technology, ledgers, and local models.
