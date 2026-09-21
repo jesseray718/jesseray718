@@ -1,17 +1,16 @@
-### Building open hardware that runs on open software.
+# Jesse Ray — OpenRoot
+**Open-source hardware blockchain — Proof of Physical Work.** Local-first AI + passive energy systems, structured to lift the economic bottom floor.
 
-**Jesse McMillen — Sikeston, Missouri**
+### ⚡ Stack
+OptiPlex 3060 (Ubuntu 24.04) · Ollama 7B/3B coder+grader · nRF52/nRF54L15/STM32 firmware · Orange Pi clusters
 
-I'm building [OpenRoot](https://github.com/jesseray718/openroot): an open-source appropriate-technology ecosystem — open-cell cement thermal exchangers, solar stack-effect panels, ferrocement domes, coppice rocket mass heaters. Every load-bearing claim is graded and paired with a stated falsifier. CC-BY-SA / GPL, **no patents, ever**.
+### 🔥 Active Programs
+- **Passive Energy**: Thermal labyrinth (−35°F measured) · Aerocement absorber (COP-boundary) · Low-ΔT Stirling
+- **AI Orchestration**: 7B builder / 3B grader local stack · mistake-to-solution ledger · non-recompute caching
+- **Mesh**: Geodesic-frequency coverage · SBC fleets · offline sovereignty
 
-🛠 Currently pouring: **Node Zero** — the first physical OpenRoot build, southeast Missouri.
-🌱 Side tracks: Black Locust afforestation, seed sovereignty, offline-first AI tooling.
-📐 Method: [wisdom-scaffold](https://github.com/jesseray718/wisdom-scaffold) — three ledgers for turning work into compounding assets.
-
-> η = useful_joules / human_joules
-
-📫 jrm8908@proton.me
+### 📜 Doctrine
+Audit instruments before builders · Human is the commit gate · Falsifiable claims only · Lift the bottom floor
 
 ---
-
-**Pinned below:** the flagship repos. Start with `openroot`, then `openroot-ecosystem` for the map.
+*OpenRoot v1.0.0 is live — [start here](https://github.com/jesseray718/openroot).*
