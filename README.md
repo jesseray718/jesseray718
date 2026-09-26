@@ -1,16 +1,23 @@
-# Jesse Ray — OpenRoot
-**Open-source hardware blockchain — Proof of Physical Work.** Local-first AI + passive energy systems, structured to lift the economic bottom floor.
+# Jesse McMillen / OpenRoot
 
-### ⚡ Stack
-OptiPlex 3060 (Ubuntu 24.04) · Ollama 7B/3B coder+grader · nRF52/nRF54L15/STM32 firmware · Orange Pi clusters
+I build open-source appropriate technology: practical thermal, shelter, materials, energy, and local-first computing systems that can be understood, tested, repaired, and shared.
 
-### 🔥 Active Programs
-- **Passive Energy**: Thermal labyrinth (−35°F measured) · Aerocement absorber (COP-boundary) · Low-ΔT Stirling
-- **AI Orchestration**: 7B builder / 3B grader local stack · mistake-to-solution ledger · non-recompute caching
-- **Mesh**: Geodesic-frequency coverage · SBC fleets · offline sovereignty
+## Start Here
 
-### 📜 Doctrine
-Audit instruments before builders · Human is the commit gate · Falsifiable claims only · Lift the bottom floor
+- **[OpenRoot](https://github.com/jesseray718/openroot)** — public ecosystem hub, evidence standards, and repository map
+- **[AeroCement](https://github.com/jesseray718/aerocement)** — lightweight construction-material research
+- **[Black Locust RMH](https://github.com/jesseray718/black-locust-rmh)** — rocket-mass-heater thermal cascade
+- **[OpenCell Thermal System](https://github.com/jesseray718/OpenCell-Thermal-System)** — thermal storage and passive-system research
+- **[Design-packet template](https://github.com/jesseray718/openroot-design-packet-template)** — reproducible open-hardware project structure
 
----
-*OpenRoot v1.0.0 is live — [start here](https://github.com/jesseray718/openroot).*
+## Working Principle
+
+```text
+evidence → documentation → buildable action → measurement → correction → shared capability
+```
+
+I favor low-resource, repairable, offline-capable systems; open documentation; explicit constraints; and claims that can be checked against measurements.
+
+## Public Status
+
+The account is being consolidated into a small number of clear public projects. The [OpenRoot repository map](https://github.com/jesseray718/openroot/blob/main/docs/REPOSITORIES.md) identifies active projects, templates, reference material, archives, and external forks.
