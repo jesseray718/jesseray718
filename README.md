@@ -1,4 +1,5 @@
 # Jesse McMillen / OpenRoot
+## 💡 Energy Efficiency: **1.585J saved** by skipping cached pathways (1 fresh, 2 cached)
 
 I build open-source appropriate technology: practical thermal, shelter, materials, energy, and local-first computing systems that can be understood, tested, repaired, and shared.
 
