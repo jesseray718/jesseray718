@@ -1,7 +1,19 @@
 # Jesse McMillen / OpenRoot
-## 💡 Energy Efficiency: **1.585J saved** by skipping cached pathways (1 fresh, 2 cached)
 
-I build open-source appropriate technology: practical thermal, shelter, materials, energy, and local-first computing systems that can be understood, tested, repaired, and shared.
+## Receipts, not assertions
+
+I build open-source appropriate technology: practical thermal, shelter,
+materials, energy, and local-first computing systems that can be understood,
+tested, repaired, and shared. Every claim below traces to a versioned record,
+a measurement, or a receipt you can regenerate yourself.
+
+**Latest proof — five-lineage consolidation (2026-10-24).** Four unrelated
+history lineages plus main, squash-merged oldest-first into one repository:
+five `merge(squash)` commits, 1,006 → 5,470 tracked files, every per-phase
+delta reconciled, source branch heads deleted on origin as intended. The
+verification tool resolves the whole story from the merge commits themselves —
+no trust required, just `bash verify_consolidation_v2.sh . --fetch --remote` —
+and it returned `CONSOLIDATION RECEIPT VERIFIED` independently on two machines.
 
 ## Start Here
 
@@ -17,8 +29,17 @@ I build open-source appropriate technology: practical thermal, shelter, material
 evidence → documentation → buildable action → measurement → correction → shared capability
 ```
 
-I favor low-resource, repairable, offline-capable systems; open documentation; explicit constraints; and claims that can be checked against measurements.
+I favor low-resource, repairable, offline-capable systems; open documentation;
+explicit constraints; and claims that can be checked against measurements. The
+guiding ratio is η = J_useful / J_human — a RAPL-backed counter in OpenRoot
+banks the joules saved by skipping already-proven pathways instead of
+recomputing them.
 
 ## Public Status
 
-The account is being consolidated into a small number of clear public projects. The [OpenRoot repository map](https://github.com/jesseray718/openroot/blob/main/docs/REPOSITORIES.md) identifies active projects, templates, reference material, archives, and external forks.
+The account consolidation is complete: OpenRoot is now the single hub where
+active hardware, software, templates, and preserved references are mapped in
+[docs/REPOSITORIES.md](https://github.com/jesseray718/openroot/blob/main/docs/REPOSITORIES.md).
+OpenRoot runs as a local-first knowledge-pod system — sealed workflows, human
+gates on every push, receipts for every consequential operation — and is
+developed in the open as a working system, not a finished certification.
