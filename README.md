@@ -1,45 +1,47 @@
-# Jesse McMillen / OpenRoot
+# Jesse Ray
 
-## Receipts, not assertions
+I build **offline-first shelter, heat, and compute** you can stand up on a phone and a used PC.
 
-I build open-source appropriate technology: practical thermal, shelter,
-materials, energy, and local-first computing systems that can be understood,
-tested, repaired, and shared. Every claim below traces to a versioned record,
-a measurement, or a receipt you can regenerate yourself.
+Hub: **[openroot](https://github.com/jesseray718/openroot)** · `v1.2.1-popw-ledger`  
+Index: **[canonical](https://github.com/jesseray718/canonical)** · pins, not a third clone  
+Operator notes: **[wisdom-scaffold](https://github.com/jesseray718/wisdom-scaffold)** · `v0.1.0` sidekick
 
-**Latest proof — five-lineage consolidation (2026-10-24).** Four unrelated
-history lineages plus main, squash-merged oldest-first into one repository:
-five `merge(squash)` commits, 1,006 → 5,470 tracked files, every per-phase
-delta reconciled, source branch heads deleted on origin as intended. The
-verification tool resolves the whole story from the merge commits themselves —
-no trust required, just `bash verify_consolidation_v2.sh . --fetch --remote` —
-and it returned `CONSOLIDATION RECEIPT VERIFIED` independently on two machines.
+## What is real this week
 
-## Start Here
+- Local **7B coder** on an OptiPlex. The phone is the client. No cloud required for inference.
+- **Proof-of-physical-work ledger** — append-only hash-linked jsonl in openroot.
+- **AeroCement + Black Locust RMH** — walls and heat you can build with a drill and a bucket.
+- Missouri plantings and a two-node Syncthing mesh (A15 + box).
 
-- **[OpenRoot](https://github.com/jesseray718/openroot)** — public ecosystem hub, evidence standards, and repository map
-- **[AeroCement](https://github.com/jesseray718/aerocement)** — lightweight construction-material research
-- **[Black Locust RMH](https://github.com/jesseray718/black-locust-rmh)** — rocket-mass-heater thermal cascade
-- **[OpenCell Thermal System](https://github.com/jesseray718/OpenCell-Thermal-System)** — thermal storage and passive-system research
-- **[Design-packet template](https://github.com/jesseray718/openroot-design-packet-template)** — reproducible open-hardware project structure
+η = useful joules / human joules. If a repo does not raise that ratio, it is archived or pinned, not featured.
 
-## Working Principle
+## Map (do not clone everything)
 
-```text
-evidence → documentation → buildable action → measurement → correction → shared capability
-```
+| Need | Repo | Status |
+|---|---|---|
+| Engineering hub | `openroot` | live, use this |
+| Dashboard | `canonical` | pins only |
+| Sidekick / 12 principles | `wisdom-scaffold` | live kit |
+| Material | `aerocement` | spoke |
+| Heat | `black-locust-rmh` | spoke |
+| η math | `une` / `etaledger` | spoke |
+| Thesis | `openroot-thesis` | read, do not fork into a fourth hub |
+| Archived merges | `renaissance-protocol`, `OpenCell-Thermal-System`, `civilization2.0` | see openroot |
 
-I favor low-resource, repairable, offline-capable systems; open documentation;
-explicit constraints; and claims that can be checked against measurements. The
-guiding ratio is η = J_useful / J_human — a RAPL-backed counter in OpenRoot
-banks the joules saved by skipping already-proven pathways instead of
-recomputing them.
+Pinned on the profile should stay: `openroot`, `une`, `aerocement`, `black-locust-rmh`, `openroot-spoke-template`, `wisdom-scaffold` (swap `agape-une` if you must drop one).
 
-## Public Status
+## Support the work
 
-The account consolidation is complete: OpenRoot is now the single hub where
-active hardware, software, templates, and preserved references are mapped in
-[docs/REPOSITORIES.md](https://github.com/jesseray718/openroot/blob/main/docs/REPOSITORIES.md).
-OpenRoot runs as a local-first knowledge-pod system — sealed workflows, human
-gates on every push, receipts for every consequential operation — and is
-developed in the open as a working system, not a finished certification.
+This is not a product funnel. It is a public workshop.
+
+If the code or the build notes saved you a furnace, a cloud bill, or a week of setup:
+
+- **Use it** and file one concrete issue. That is the highest-η gift.
+- **Sponsor time** so the next commit is a measured yield (ledger line, not a new brand): GitHub Sponsors on this profile when enabled, or email **jesseray718@gmail.com** with a single sentence of what you used.
+- Hardware / travel / trees: say so in the email. I will not invent a token to take your money.
+
+No countdown clocks. No “only 3 left.” Proof first, then ask.
+
+## Contact
+
+jesseray718@gmail.com · Sikeston / Missouri · CC-BY-SA docs · GPL-3.0 code
