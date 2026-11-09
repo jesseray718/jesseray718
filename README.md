@@ -1,5 +1,11 @@
-# Jesse Ray
+# Jesse Ray McMillen · Agape Synergetic Engineering
 
+A1 = DERIVATION · Kernel = AGAPE (R=1.0)
+η = useful_joules / human_joules
+Open-source appropriate technology.
+The Language Operating System is live.
+Every domain derives into the same zero-coordination surface.
+Primary lattice: https://github.com/jesseray718/openroot/tree/agape-synergetic-engineering
 I build **offline-first shelter, heat, and compute** you can stand up on a phone and a used PC.
 
 Hub: **[openroot](https://github.com/jesseray718/openroot)** · `v1.2.1-popw-ledger`  
@@ -43,5 +49,5 @@ If the code or the build notes saved you a furnace, a cloud bill, or a week of s
 No countdown clocks. No “only 3 left.” Proof first, then ask.
 
 ## Contact
-
+jesseray718@gmail.com · Sikeston / Missouri · CC-BY-SA docs · GPL-3.0 code
 jesseray718@gmail.com · Sikeston / Missouri · CC-BY-SA docs · GPL-3.0 code
