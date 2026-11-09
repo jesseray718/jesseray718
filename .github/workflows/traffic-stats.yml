@@ -1,0 +1,57 @@
+name: GitHub Traffic Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  traffic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests PyGithub
+      
+      - name: Collect traffic data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python << 'PYTHON'
+          import requests
+          import json
+          from datetime import datetime
+          
+          # Get traffic data for each repo
+          repos = [
+              "aerocement",
+              "openroot",
+              "openroot-foundation",
+              "wisdom-scaffold",
+              "renaissance-protocol"
+          ]
+          
+          headers = {"Authorization": f"token {os.environ['GH_TOKEN']}"}
+          
+          for repo in repos:
+              # Get views
+              views_url = f"https://api.github.com/repos/jesseray718/{repo}/traffic/views"
+              response = requests.get(views_url, headers=headers)
+              
+              if response.status_code == 200:
+                  data = response.json()
+                  print(f"{repo}: {data['count']} views, {data['uniques']} unique visitors")
+              else:
+                  print(f"Failed to get traffic for {repo}: {response.status_code}")
+          PYTHON
+      
+      - name: Update README with latest stats (optional)
+        run: |
+          echo "Traffic stats collected. Check GitHub Insights for detailed analytics."

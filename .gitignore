@@ -1,9 +1,7 @@
-*.csv
-.env
-*.local
-.DS_Store
-__pycache__/
+vendor_archive/
+quarantine/
+backups/
+logs/
+*.log
 *.pyc
-.tokens_log
-ollama.log
-bin/
+__pycache__/
