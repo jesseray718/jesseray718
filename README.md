@@ -1,95 +1,56 @@
-<!-- OPENROOT_PUBLIC_ENTRY_V2:START -->
 # Jesse Ray McMillen
 
-### Agape synergetic engineering · appropriate technology · local-first systems
+### Agape synergetic engineering · appropriate technology · a distributed commons
 
-I am building OpenRoot: an open technology commons that helps people preserve useful knowledge, inspect its evidence, combine working pieces, and put them to practical use.
+I am building OpenRoot: an open-source commons connecting practical technology, local computing, shared evidence, and contribution accounting. The ambition is a worldwide web of locally useful clusters: people building, measuring, repairing, and sharing systems that serve their communities.
 
-The aim is durable capability for people and communities—not more computation for its own sake.
+[Explore OpenRoot](https://github.com/jesseray718/openroot) · [Project overview](https://jesseray718.github.io/openroot/) · [Contribute](https://github.com/jesseray718/openroot/blob/main/CONTRIBUTING.md)
 
-[Explore OpenRoot](https://github.com/jesseray718/openroot) · [Project overview](https://jesseray718.github.io/openroot/) · [Contribute](https://github.com/jesseray718/openroot/blob/f238c5f3c3a0a4ff8ce3498427dacea3207873d6/CONTRIBUTING.md)
+## One connected purpose
 
-## What connects the work
+- Physical capability: AeroCement material research, solar-thermal absorbers, thermal-cascade systems, repairable hardware, and appropriate technology.
+- Local intelligence: searchable knowledge, reusable workflows, and computing designed for ordinary phones and used computers.
+- Distributed cooperation: mesh-connected nodes and local clusters that can exchange useful work without making continuous internet access a prerequisite for every task.
+- Evidence and shared credit: telemetry, source-linked records, cryptographic contribution receipts, and correction histories.
+- ACRE: a proposed contribution and exchange layer whose rules and backing must be explicit—not a substitute for measured outcomes.
 
-- Knowledge: source identity, SQLite/FTS5 retrieval, corrections, and inspectable records.
-- Reusable work: procedures and results with evidence, dependencies, and applicability conditions.
-- Appropriate technology: thermal-cascade research, AeroCement, repairable hardware, and community-scale infrastructure.
-- Access: useful tools for ordinary phones and used computers, with offline operation as a design priority.
+Agape and permaculture guide the work: integrate compatible functions, accept feedback, reduce waste, preserve shared credit, and serve people with the fewest resources first.
 
-Agape, permaculture, and shared benefit guide the design: preserve what is useful, accept feedback, integrate compatible functions, avoid waste, and support people with the fewest resources.
+## Preserve work so others need not repeat it
 
-## Start with a reproducible component
+The zero-cost-recompute ambition is to avoid paying the full cost of rediscovery: preserve results with their inputs, dependencies, evidence, and applicability conditions; retrieve and verify before recomputing. This is not a claim of literally free energy, storage, or computation.
 
-[Read the pathway-cache behavior example](https://github.com/jesseray718/openroot/tree/f238c5f3c3a0a4ff8ce3498427dacea3207873d6/examples/pathway-cache-behavior). From a checkout containing it:
+The intended loop is: local need → open design → build or computation → measurement → review → attributed reuse → correction.
+
+## Physical systems and honest evidence
+
+AeroCement is a material family, not one universal mix. The thermal research includes carbon-infused open-cell absorber concepts and a coupled hot/cold storage architecture. Material properties, airflow, energy balances, durability, and useful output require measurements for each configuration. Blackbody language describes an absorber design aim, not certified performance.
+
+Cryptographic records can make attribution and recorded history inspectable. They do not establish that a sensor is accurate or a physical claim is true. Blockchain anchoring or shared settlement may support the network, but useful designs and evidence should remain accessible without buying a token.
+
+## Start with an inspectable component
+
+From an OpenRoot checkout containing the published example:
 
 ```bash
 python3 examples/pathway-cache-behavior/demo.py
 python3 examples/pathway-cache-behavior/demo.py --self-test
 ```
 
-The published example documents four cases and seven tests. It distinguishes ledger integrity from external evidence-file freshness. It uses disposable fixtures, not private databases, and does not execute recorded workflow steps. Run it to inspect the behavior; it is not proof that the whole OpenRoot pipeline is complete.
+[Read the example and limitations](https://github.com/jesseray718/openroot/tree/main/examples/pathway-cache-behavior). It documents four cases and seven tests using disposable fixtures. It distinguishes ledger integrity from external evidence freshness; it does not demonstrate the complete distributed system.
 
-## Current status and next proof
+## Current status and useful contributions
 
-OpenRoot is an active experimental build. Component examples and local tools exist; automatic all-pod retrieval, correction-aware reuse, and a complete cross-device offline pathway are integration work, not universal guarantees.
+OpenRoot is an active experimental build. End-to-end correction-aware reuse, disconnected cross-device operation, physical-system performance, independent cluster adoption, and ACRE economics are not established by this profile.
 
-The next end-to-end proof is one evidence-backed question, a checked reusable result, offline consumption on another device, and reliable refusal when a required dependency changes.
+Help reproduce a test, document a material specimen, calibrate a measurement, improve an instruction, trace attribution, or replicate a bounded experiment. The next proof should connect one useful result, its evidence, independent reuse, and a correction that reaches the next node.
 
-Physical-system performance requires its own measurements and replication. A hash establishes an artifact identity under its construction; it does not by itself establish scientific truth, measured energy yield, or token value.
+[OpenRoot issues](https://github.com/jesseray718/openroot/issues) · [AeroCement](https://github.com/jesseray718/aerocement) · [Design-packet template](https://github.com/jesseray718/openroot-design-packet-template)
 
-## Help build the commons
+## Licensing and continuity
 
-Start with a narrow contribution: reproduce a test, improve a confusing instruction, report a retrieval miss, document a correction, or contribute a clearly labeled experiment or design packet.
+OpenRoot's documented model is GPL-3.0-only for software and CC BY-SA 4.0 for non-code material, subject to the actual repository licenses, file headers, and third-party terms. Preserve attribution. This profile changes no license.
 
-[Contribution guide](https://github.com/jesseray718/openroot/blob/f238c5f3c3a0a4ff8ce3498427dacea3207873d6/CONTRIBUTING.md) · [Issues and discussion of concrete work](https://github.com/jesseray718/openroot/issues) · [Design-packet template](https://github.com/jesseray718/openroot-design-packet-template)
-
-## Licensing and credit
-
-Respect repository licenses and individual file headers. OpenRoot's documented model is GPL-3.0-only for software and CC BY-SA 4.0 for non-code material; see the actual [license](https://github.com/jesseray718/openroot/blob/f238c5f3c3a0a4ff8ce3498427dacea3207873d6/LICENSE) and source headers for applicability. Preserve contributor attribution and third-party terms.
+Earlier profile text remains in Git history; historical claims are not promoted to current verified results.
 
 *Engineering as an act of unconditional integration.*
-<!-- OPENROOT_PUBLIC_ENTRY_V2:END -->
-
-<details>
-<summary>Project foundations and historical notes — earlier status descriptions may be superseded</summary>
-
-The material below is preserved for continuity. Historical performance, deployment, financial, and physical claims are not promoted to current verified results by this update. Follow dated evidence and current source instructions.
-
-# Jesse Ray McMillen · Agape Synergetic Engineering
-
-A1 = DERIVATION · Kernel = AGAPE (R=1.0) · eta = useful_joules / human_joules
-
-Open-source appropriate technology. Offline-first shelter, heat, and compute you can stand up on a phone and a used PC.
-
-Hub: **openroot** · `v1.2.1-popw-ledger` · GPL-3.0
-Site: jesseray718.github.io/openroot/
-
-## What is real this week
-
-- **Sealed pathways.** Local 7B coder on the OptiPlex; the phone is the client over SSH/Tailscale. Every inference runs plan - execute - verify - seal into the append-only hash-linked ledger.
-- **History scrubbed, gate hardened.** 2,966 commits rewritten clean (zero blobs >100MB, verified), pushed after three rejections taught the lesson: payloads travel by mesh, never by git history.
-- **Mesh live.** Two-node Syncthing v2.1.7 mesh (a15 + OptiPlex), direct TLS 1.3 over the tailnet, 54k-file migration verified.
-- **Release rail everywhere.** Gate before commit (`bash -n` / `py_compile` / size gate / table drift checks), sealed receipts (GATE_RECEIPT, BUILD_STATUS, append-only WORK_LOG). No rewrites of pushed history.
-
-eta = useful joules / human joules. If a repo does not raise that ratio, it is archived or pinned, not featured.
-
-## Map (do not clone everything)
-
-| Need | Repo | Status |
-|---|---|---|
-| Engineering hub | `openroot` | live, use this |
-| Sealed mesh + thermal | `aperture-mesh` | live stack |
-| Dashboard | `canonical` | pins only |
-| Sidekick / 12 principles | `wisdom-scaffold` | live kit |
-| Material | `aerocement` | spoke |
-| Heat | `black-locust-rmh` | spoke |
-| η math | `une` / `etaledger` | spoke |
-| Thesis | `openroot-thesis` | read, do not fork into a fourth hub |
-| Auth UI | `openroot-authui` | extracted per issue #118 |
-| Archived merges | `renaissance-protocol`, `OpenCell-Thermal-System`, `civilization2.0` | see openroot |
-
-## Support the work
-
-This is not a product funnel. It is a public workshop. Clone the hub, run the gate, and build the physical layer where you live.
-
-</details>
