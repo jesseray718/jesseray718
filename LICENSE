@@ -1,1 +1,17 @@
-/data/data/com.termux/files/home/une/meta_hub/agape-une/LICENSE
+OpenRoot profile repository: licensing map
+
+Software, scripts and firmware: GNU General Public License version 3.
+See LICENSE-SOFTWARE.md and LICENSES/GPL-3.0.txt.
+Existing per-file notices determine GPL version options and exceptions.
+
+Hardware design documentation, manuals, diagrams and other non-software
+material: Creative Commons Attribution-ShareAlike 4.0 International.
+See LICENSE-HARDWARE.md and LICENSES/CC-BY-SA-4.0.txt.
+
+Specific third-party and per-file notices remain authoritative. This
+maintainer clarification does not relicense others' work or withdraw
+permissions already granted for earlier releases. The previous short AGPL
+root notice remains available in Git history; it is not silently restored
+as the software-wide policy. See docs/LICENSING_AND_STEWARDSHIP.md.
+
+No AGPL or CERN-OHL migration is performed by this repair.
