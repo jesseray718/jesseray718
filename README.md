@@ -1,5 +1,19 @@
 # Jesse Ray McMillen
 
+<!-- OPENROOT-STATUS-2026-11-23 -->
+## OpenRoot now: verified knowledge pods, correction-aware reuse in progress
+
+The goal: turn local data into inspectable knowledge pods, retrieve evidence before generating, and preserve sealed answers for validated replay without another model request. This local intelligence serves the larger appropriate-technology commons described below.
+
+As of November 23, 2026, the operator reports passing 249-cell and 18-cell pod runs and all six G22 retrieval-only assertions, including corrective facts in the model packet with zero model requests. A separate, earlier instrumented integration receipt records generation, exact zero-generation replay, and refusal after an operator block.
+
+Next: one metered G22 answer-content test, verification of its new pathway/replay/block behavior, and AeroCement exhaustive-selection and quality acceptance on its own lane. These results do not yet establish production end-to-end integration, measured-energy success, or cross-device guarantees.
+
+[Read the status and remaining build list](https://github.com/jesseray718/openroot/blob/main/docs/STATUS-2026-11-23.md) · [Questions to resolve through the system](https://github.com/jesseray718/openroot/blob/main/docs/SYSTEM-QUESTIONS-2026-11-23.md)
+
+Evidence scope: the latest local results are operator-reported; publishing this profile does not independently rerun them or deploy local code. Payload never in Git; existing seals remain unchanged. Legacy `b3` means BLAKE2b-256, not BLAKE3.
+<!-- /OPENROOT-STATUS-2026-11-23 -->
+
 ### Agape synergetic engineering · appropriate technology · a distributed commons
 
 I am building OpenRoot: an open-source commons connecting practical technology, local computing, shared evidence, and contribution accounting. The ambition is a worldwide web of locally useful clusters: people building, measuring, repairing, and sharing systems that serve their communities.
